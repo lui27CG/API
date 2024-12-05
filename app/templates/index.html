@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Batalla de Equipos Digimon</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    </head>
+    
+<body>
+    <header>
+        <h1>Batalla de Equipos Digimon</h1>
+        <p>Selecciona hasta 6 Digimon en cada equipo y enfréntalos para ver quién gana.</p>
+    </header>
+    <main>
+        <section id="digimon-list" class="grid-container">
+        </section>
+
+        <aside>
+            <div id="team-1">
+                <h2>Equipo 1</h2>
+                <div id="team-1-container" class="team-container"></div>
+                <div id="team-1-stats">
+                    <p>Poder Total: <span id="team-1-power">0</span></p>
+                </div>
+                <button id="clear-team-1">Limpiar Equipo 1</button>
+            </div>
+
+            <div id="team-2">
+                <h2>Equipo 2</h2>
+                <div id="team-2-container" class="team-container"></div>
+                <div id="team-2-stats">
+                    <p>Poder Total: <span id="team-2-power">0</span></p>
+                </div>
+                <button id="clear-team-2">Limpiar Equipo 2</button>
+            </div>
+        </aside>
+
+        <section>
+            <button id="battle-button">Enfrentar Digimones</button>
+        </section>
+
+        <div id="battle-effect" class="hidden">
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Batalla de Equipos Digimon</p>
+    </footer>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
